@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explore Wikipedia</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+	<div id="search-container">
+		<h1>Where are we going today?</h1>
+		<form id="search-wiki">
+			<input id="search-input" type="search" name="search" autocomplete="off" autofocus=true required>
+
+			<button type="submit">Explore</button>
+			<button type="button" onclick="location.href='https://en.wikipedia.org/wiki/Special:Random'">Get Lost</button>
+		</form>
+
+	</div>
+
+	<div id="result-container"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>
