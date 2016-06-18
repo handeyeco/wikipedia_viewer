@@ -1,0 +1,26 @@
+{
+  "name": "wikipedia_viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-css": "node-sass --include-path scss src/styles/main.scss dist/styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewbryancurtis/wikipedia_viewer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewbryancurtis/wikipedia_viewer/issues"
+  },
+  "homepage": "https://github.com/matthewbryancurtis/wikipedia_viewer#readme",
+  "devDependencies": {
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.9.2"
+  }
+}

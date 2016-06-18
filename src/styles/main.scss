@@ -1,0 +1,112 @@
+$pink-dark: #9E0142;
+$pink-light: #D53E4F;
+$orange-dark: #F46D43;
+$orange-light: #FDAE61;
+$yellow-dark: #FEE08B;
+$yellow-light: #FFFFBF;
+$yellow-green: #E6F598;
+$green-dark: #66C2A5;
+$green-light: #ABDDA4;
+$blue-dark: #3288BD;
+$purple-dark: #5E4FA2;
+
+$box-color: $yellow-light;
+$font-color: $purple-dark;
+
+$font-stack: sans-serif;
+
+$border: 2px solid $font-color;
+
+// * { border: 1px dashed white; }
+
+body {
+  height: 100%;
+  color: $font-color;
+
+  padding : {
+    top: 20vh;
+    bottom: 2em;
+  }
+
+  font: {
+    family: $font-stack;
+    size: 16px;
+  }
+
+  background: {
+    color: $blue-dark;
+    image: url(../images/trianglify_small.svg);
+    size: cover;
+    attachment: fixed;
+  }
+}
+
+a, a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: $font-color;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 0px;
+  margin-bottom: 0.5em;
+  padding: 0px;
+}
+
+#search-container, #result-container {
+  margin: auto;
+  max-width: 40em;
+}
+
+#search-container {
+  border: $border;
+  text-align: center;
+  background-color: $box-color;
+
+  padding: {
+    top: 2em;
+    bottom: 2em;
+  }
+
+  input {
+    outline: none;
+    font-size: 16px;
+    display: block;
+    box-sizing: border-box;
+    border: $border;
+    color: $font-color;
+    padding: 9px 14px;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+    margin: {
+      left: auto;
+      right: auto;
+      bottom: 1em;
+    }
+  }
+
+  button {
+    background-color: $font-color;
+    border: none;
+    color: $box-color;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+}
+
+#result-container {
+  .result {
+    background-color: $box-color;
+    border: $border;
+    padding: 1em;
+
+    margin: {
+      top: 1em;
+    }
+
+    &:hover {
+      background-color: white;
+    }
+  }
+}
